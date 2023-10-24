@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Noto_Sans_Thai } from 'next/font/google'
 import '@/styles/globals.css'
 import { Provider } from '@/app/provider';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Noto_Sans_Thai({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
