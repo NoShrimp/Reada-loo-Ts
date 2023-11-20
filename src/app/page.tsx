@@ -1,6 +1,7 @@
 'use client'
 
 import { useSession, signIn, signOut } from "next-auth/react"
+import Link from "next/link"
 
 export default function Home() {
   const { data: session, status } = useSession()
@@ -33,9 +34,17 @@ export default function Home() {
         Not signed in <br />
         <button onClick={() => signIn()} className='p-2 px-5 bg-green-500 text-green-900 text-bold rounded-full border-2 border-green-200 hover:border-green-900'>Sign In</button>
         <a href="/Test">test pdf</a>
+        <a href="/testcrud">test book</a>
+
+        <section className="text-center h-screen">
+          <h1 className="font-bold text-3xl mt-20">Test Comment</h1>
+          <Link className="text-white-900 leading-7 hover:text-gray-900/70 underline" href="/create-post">Let's Comment</Link>
+        </section>
+
       </div>
     </>
   )
+
 
 
 }

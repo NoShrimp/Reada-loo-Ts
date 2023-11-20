@@ -4,6 +4,9 @@ import React from 'react'
 // import { Document, Page, Text, StyleSheet, View } from '@react-pdf/renderer';
 import { Document, Page } from 'react-pdf';
 import { useState } from 'react';
+import { pdfjs } from 'react-pdf';
+import 'react-pdf/dist/Page/TextLayer.css';
+import 'react-pdf/dist/Page/AnnotationLayer.css';
 
 // const styles = StyleSheet.create({});
 
@@ -23,6 +26,8 @@ import { useState } from 'react';
 //     </Document>
 // }
 
+
+
 export default function page() {
 
     const [numPages, setNumPages] = useState<number>();
@@ -34,7 +39,7 @@ export default function page() {
 
     return (
         <div>
-            <Document file="https://www.orimi.com/pdf-test.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+            <Document file="http://cosci.swu.ac.th/storage/downloads/mZIhMInPhjY7z74x8z6m8meYUvd0mEqfLJ9QpjGJ.pdf" onLoadSuccess={onDocumentLoadSuccess}>
                 <Page pageNumber={pageNumber} />
             </Document>
             <p>
