@@ -1,5 +1,9 @@
 'use client'
+
+import { comment } from "postcss";
 import { useState, useEffect } from "react"
+import { Router } from "next/router";
+import { useRouter } from "next/navigation"
 // import { useRouter } from "next/navigation"
 
 interface Comment {
@@ -10,10 +14,13 @@ interface Comment {
 }
 
 const CommentPage = () => {
-
+    const router = useRouter();
 
     //Get All Comment
+
     const [comments, setComments] = useState<Comment[]>([]);
+
+   
 
     useEffect(() => {
         const getComments = async () => {
@@ -33,6 +40,10 @@ const CommentPage = () => {
         const updatedComments = [...comments]
         updatedComments[index].checked = !updatedComments[index].checked
         setComments(updatedComments)
+    }
+
+    const handleEdit = (comment: Comment) => {
+        router.push(`/comments/edit?id=${comment.id}`)
     }
 
 
@@ -58,7 +69,7 @@ const CommentPage = () => {
                         <button
                             disabled={!comment.checked}
                             className="text-xd text-gray-900 hover:text-gray-900/70"
-                            // onClick={() => handleEdit(comment)}
+                            onClick={() => handleEdit(comment)}
                         >
                             {comment.checked ? "Edit Comment" : ""}
                         </button>
