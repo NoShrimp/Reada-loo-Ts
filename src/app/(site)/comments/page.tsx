@@ -20,7 +20,7 @@ const CommentPage = () => {
 
     const [comments, setComments] = useState<Comment[]>([]);
 
-   
+
 
     useEffect(() => {
         const getComments = async () => {
@@ -46,6 +46,24 @@ const CommentPage = () => {
         router.push(`/comments/edit?id=${comment.id}`)
     }
 
+    const handleDelete = async (comment: Comment) => {
+        try {
+            const response = await fetch(`/apicrud/delete-comment/${comment.id}`, {
+                method: "DELETE"
+            })
+            const data = await response.json()
+            console.log(data)
+            if(response.ok) {
+                alert('Comment deleted successfully')
+                setComments(comments.filter((comment: Comment) => comment.id !==data.id))
+                window.location.reload()
+            }
+        } catch(error) {
+            console.log(error)
+        }
+    }
+    
+
 
     return (
         <div className="w-full max-w-5xl mx-auto text-center">
@@ -62,7 +80,7 @@ const CommentPage = () => {
 
                         <button className=" text-xs text-gray-900 lending-7 hover:text-gray-900/70"
                             disabled={!comment.checked}
-                            // onClick={() => handleDelete(comment)}
+                        onClick={() => handleDelete(comment)}
                         >
                             {comment.checked ? "Delete" : ""}
                         </button>
