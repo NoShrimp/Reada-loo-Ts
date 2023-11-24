@@ -17,3 +17,8 @@ model Comment {
   
 }
 
+model Book {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  title String
+  text String
+}
