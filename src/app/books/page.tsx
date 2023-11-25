@@ -43,13 +43,6 @@ const BookPage = () => {
             ) : (
                 <p>No books available</p>
             )}
-            
-            {/* {books.map((book: Book, index: number) => (
-                <div key={book.id}>
-                    <p className="font-bold">{book.Title}</p>
-                    <p>{book.Text}</p>
-                </div>
-            ))} */}
         </div>
     );
 
