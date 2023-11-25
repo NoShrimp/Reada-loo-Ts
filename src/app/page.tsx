@@ -1,43 +1,31 @@
-'use client'
+import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 
-import { useSession, signIn, signOut } from "next-auth/react"
-
-export default function Home() {
-  const { data: session, status } = useSession()
-
-
-  if (status === "loading") {
-    return <div>Loading...</div>
-  }
-
-  if (session) {
-    return (
-      <main>
-        <div className='flex flex-col items-center mt-10 gap-3'>
-          <img src={session.user?.image ?? ''} className='w-[50px] h-[50px] rounded-full' />
-          <div className='text-left'>
-            <p className='text-center font-semibold'>Signed in as</p>
-            Email : {session.user?.email} <br />
-            Name : {session.user?.name} <br />
-          </div>
-          <a href="/Test">Press here</a>
-          <button onClick={() => signOut()} className='p-2 px-5 bg-red-100 rounded-full border-2 border-red-200 hover:border-red-500 dark:bg-red-900 dark:border-red-600 dark:hover:border-red-800'>Sign out</button>
-        </div>
-      </main>
-    )
-  }
-
+export default function page() {
   return (
-    <>
-      <div className='flex flex-col items-center mt-10 gap-3'>
-        Not signed in <br />
-        <button onClick={() => signIn()} className='p-2 px-5 bg-green-500 text-green-900 text-bold rounded-full border-2 border-green-200 hover:border-green-900'>Sign In</button>
-        <a href="/Test">test pdf</a>
+    <div>
+      
+      <div className="hero min-h-screen bg-neutral">
+        <div className="hero-content text-center text-base-100">
+          <div className="max-w-md">
+            <h1 className="text-6xl font-bold p-2 font-sans">Reada-loo</h1>
+            <h2 className="text-2xl font-semibold">[is more than read!]</h2>
+            <p className="py-6">
+            เป็นไงพาสเจอร์ไรส์ชาร์ปเอาต์ หมายปองโมเดิร์นมาร์กโบ้ยระโงก ลิมูซีน ไอเดียโอเลี้ยงพรีเมียมเทรด ฮ็อตพ่อค้าเรซิ่น แฟร์สมิติเวชแพ็ค 
+            รูบิกเปียโนภูมิทัศน์ ซาตานสเตชั่นจิตพิสัย มาร์คแต๋วโกะแอนด์ไตรมาส หล่อฮังก้วยดัมพ์วอล์กรีวิว เวิร์ก คันถธุระสี่แยกซิมโฟนี่ เซฟตี้ อิกัวนา 
+            มายองเนสฮอตดอกบลอนด์แพทเทิร์น โพลารอยด์อัลมอนด์
+            </p>
+            <div className="join">
+              <button className="btn btn-primary join-item" >Get Started</button>
+              <button className="btn btn-secondary join-item">Sign Up</button>
+            </div>
+          </div>
+        </div>
       </div>
-    </>
+      
+    </div>
   )
-
-
 }
 
 
