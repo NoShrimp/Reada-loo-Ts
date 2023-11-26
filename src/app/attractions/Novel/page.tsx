@@ -2,8 +2,13 @@
 import React from 'react'
 import { FaPen } from "react-icons/fa6";
 import { FaEye } from "react-icons/fa";
-import { useState } from 'react'
+import { useState , useEffect } from 'react'
 import { useRouter } from 'next/navigation'
+
+interface NovelCom {
+    id: string,
+    text: string
+}
 
 
 export default function Novel() {
@@ -11,6 +16,8 @@ export default function Novel() {
     const [text, setText] = useState('')
 
     const router = useRouter()
+
+    const [Novelcomments, setComments] = useState<NovelCom[]>([]);
 
     const handlePostCreation = async (event: React.FormEvent<HTMLFormElement>) => {
         if (!text) return alert('Please fill out all fields')
@@ -37,7 +44,19 @@ export default function Novel() {
             console.log(data)
     }
 
+    useEffect(() => {
+        const getNovelcom = async () => {
+            const response = await fetch('/api/show-comment')
+            const data = await response.json();
+            console.log(data)
+            setComments(data)
+        }
+        getNovelcom();
+    }, []);
 
+    useEffect(() => {
+        console.log('Comment', Novelcomments);
+    }, [Novelcomments]);
 
     return (
         <div>
@@ -189,7 +208,17 @@ export default function Novel() {
                     </div>
             </div>
         </section>
+        <div className="w-full max-w-5xl mx-auto text-center">
+        <h1 className="text-3xl font-bold mt-20">All Comments</h1>
+        {Novelcomments.map((Novelcomments: NovelCom, index: number) => (
+                    <div className="text-2xl max-w-wl flex items-center bg-gray-100 p-3 rounded-lg gap-4 my-10">
+                        <li className="font-bold" key={Novelcomments.id}>
+                            {Novelcomments.text}
+                        </li>
+                    </div>
 
+                ))}
+                </div>
         </div>
     )
 }

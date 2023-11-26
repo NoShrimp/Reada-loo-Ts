@@ -17,8 +17,8 @@ export default function page() {
             มายองเนสฮอตดอกบลอนด์แพทเทิร์น โพลารอยด์อัลมอนด์
             </p>
             <div className="join">
-              <button className="btn btn-primary join-item" >Get Started</button>
-              <button className="btn btn-secondary join-item">Sign Up</button>
+              <a href="/attractions" className='btn btn-primary join-item'>Get Started</a>
+              <a href="/attractions/login" className='btn btn-secondary join-item'>Sign In</a>
             </div>
           </div>
         </div>
