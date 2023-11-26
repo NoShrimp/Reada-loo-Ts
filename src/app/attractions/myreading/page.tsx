@@ -1,7 +1,38 @@
+'use client'
 import React from 'react'
 import { BiSolidCategory } from "react-icons/bi";
+import { useState , useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 
 export default function Myreading() {
+
+    //Get the category 
+
+    // interface NovelCom {
+    //     id: string,
+    //     text: string
+    // }
+    // const [text, setText] = useState('')
+
+    // const router = useRouter()
+
+    // const [Novelcomments, setComments] = useState<NovelCom[]>([]);
+
+    // useEffect(() => {
+    //     const getNovelcom = async () => {
+    //         const response = await fetch('/api/show-category')
+    //         const data = await response.json();
+    //         console.log(data)
+    //         setComments(data)
+    //     }
+    //     getNovelcom();
+    // }, []);
+
+    // useEffect(() => {
+    //     console.log('Comment', Novelcomments);
+    // }, [Novelcomments]);
+
+
     return (
         <div>
             <section>

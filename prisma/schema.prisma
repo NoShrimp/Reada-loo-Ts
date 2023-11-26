@@ -27,3 +27,17 @@ model NovelCom {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   text String
 }
+
+model Novel { 
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  title String
+  file String
+  catagory Category @relation(fields: [categoryId], references: [id])
+  categoryId String @db.ObjectId
+}
+
+model Category {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  type String
+  novels Novel[]
+}

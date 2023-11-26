@@ -63,7 +63,7 @@ export default function DashboardLayout({children} : { children: React.ReactNode
                 <svg className="col-start-2 row-start-1 stroke-base-100 fill-base-100" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
             </label>
             <div className="join rounded-2xl p-2">
-                <button className="btn w-17 btn-primary join-item">Log In</button>
+            <a href="/attractions/login" className='btn w-17 btn-primary join-item'>Sign In</a>
                 <button className="btn w-17 btn-secondary join-item">Sign Up</button>
             </div>
             <div className="avatar">
