@@ -1,9 +1,44 @@
+'use client'
 import React from 'react'
 import { FaPen } from "react-icons/fa6";
 import { FaEye } from "react-icons/fa";
+import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 
 export default function Novel() {
+
+    const [text, setText] = useState('')
+
+    const router = useRouter()
+
+    const handlePostCreation = async (event: React.FormEvent<HTMLFormElement>) => {
+        if (!text) return alert('Please fill out all fields')
+
+        event.preventDefault()
+        const response = await fetch('/api/post-comment', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                text
+            })
+        })
+            if (response.ok) {
+                alert('Post created successfully!')
+                setText('')
+                // router.push('/comments')
+            } else {
+                alert('Error commenting.')
+            }
+
+            const data = await response.json();
+            console.log(data)
+    }
+
+
+
     return (
         <div>
             <section>
@@ -143,9 +178,9 @@ export default function Novel() {
                         <div className="absolute px-2 top-0 -left-[0.5] bg-accent rounded-tl-xl rounded-br-xl">
                             <h2 className="text-md font-semibold text-gray-800">Comment</h2>
                         </div>
-                        <form>
+                        <form onSubmit={handlePostCreation}>
                             <div className="w-full px-3 mb-2 mt-6">
-                                <textarea className="bg-gray-100 rounded border border-gray-400 leading-normal w-full h-28 p-3 font-medium placeholder-gray-400 focus:outline-none focus:bg-white" name="body" placeholder="Your comment"></textarea>
+                                <input className="bg-gray-100 rounded border border-gray-400 leading-normal w-full h-28 p-3 font-medium placeholder-gray-400 focus:outline-none focus:bg-white" name="body" type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder  ="Your comment"></input>
                             </div>
                             <div className="w-full flex justify-end px-3 my-3">
                                 <button className="px-2.5 py-1.5 rounded-full font-bold bg-primary ">Submit</button>
