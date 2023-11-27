@@ -8,7 +8,7 @@ export async function GET(request: Request) {
     // Get All Comment from database
     const novels = await prisma.novel.findMany({
         where: {
-            categoryId : "65632233c7584d90441d9597"
+            categoryId : "65647acc0a502436bc52b19e"
         }
     })
 

@@ -6,6 +6,7 @@ import { useState , useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 
 interface NovelCom {
+    filter(arg0: (novelcomments: NovelCom) => boolean): React.SetStateAction<NovelCom[]>;
     id: string,
     text: string
 }
@@ -33,7 +34,7 @@ export default function Novel() {
             })
         })
             if (response.ok) {
-                alert('Post created successfully!')
+                alert('แสดงความคิดเห็นเรียบร้อย!')
                 setText('')
                 // router.push('/comments')
             } else {
@@ -57,6 +58,23 @@ export default function Novel() {
     useEffect(() => {
         console.log('Comment', Novelcomments);
     }, [Novelcomments]);
+
+    const handleDelete = async (Novelcomments: NovelCom) => {
+        try {
+            const response = await fetch(`/api/delete-comment/${Novelcomments.id}`, {
+                method: "DELETE"
+            })
+            const data = await response.json()
+            console.log(data)
+            if(response.ok) {
+                alert('Comment deleted successfully')
+                setComments(Novelcomments.filter((novelcomments: NovelCom) => novelcomments.id !==data.id))
+                window.location.reload()
+            }
+        } catch(error) {
+            console.log(error)
+        }
+    }
 
     return (
         <div>
@@ -215,8 +233,13 @@ export default function Novel() {
                         <li className="font-bold" key={Novelcomments.id}>
                             {Novelcomments.text}
                         </li>
-                    </div>
 
+                        <button className=" text-xs text-gray-900 lending-7 hover:text-gray-900/70"
+                        onClick={() => handleDelete(Novelcomments)}
+                        >
+                            Delete
+                        </button>
+                    </div>
                 ))}
                 </div>
         </div>

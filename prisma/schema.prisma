@@ -41,3 +41,6 @@ model Category {
   type String
   novels Novel[]
 }
+
+
+
