@@ -211,7 +211,7 @@ export default function Novel() {
         <div className="w-full max-w-5xl mx-auto text-center">
         <h1 className="text-3xl font-bold mt-20">All Comments</h1>
         {Novelcomments.map((Novelcomments: NovelCom, index: number) => (
-                    <div className="text-2xl max-w-wl flex items-center bg-gray-100 p-3 rounded-lg gap-4 my-10">
+                    <div key={index} className="text-2xl max-w-wl flex items-center bg-gray-100 p-3 rounded-lg gap-4 my-10">
                         <li className="font-bold" key={Novelcomments.id}>
                             {Novelcomments.text}
                         </li>

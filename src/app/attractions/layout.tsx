@@ -45,7 +45,7 @@ export default function DashboardLayout({children} : { children: React.ReactNode
             </div>
             </div>
         <div className="navbar-center">
-            <a className="btn btn-ghost normal-case text-xl font-sans">Reada-loo</a>
+            <a href="/attractions" className="btn btn-ghost normal-case text-xl font-sans">Reada-loo</a>
         </div>
         <div className="navbar-end">
             <button className="btn btn-ghost btn-circle">

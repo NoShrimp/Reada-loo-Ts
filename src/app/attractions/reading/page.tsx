@@ -63,7 +63,7 @@ export default function Reading() {
                 <a className="btn btn-ghost text-md"><FaHome className="w-full" />หน้าแรก</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <h3 className="text-lg font-bold mb-2 pt-2">ตอนที่ 1 ความต้องการของแอปเปิ้ลผู้ถูกทรยศ</h3>
+                <h3 className="text-lg font-bold mb-2 pt-2">ตอนที่ 1 จ้วงหยวนแหง่หนานฉู่บทนํา</h3>
             </div>
             <div className="navbar-end pr-4">
             <div className="join">
@@ -77,7 +77,7 @@ export default function Reading() {
                 <div>
                 </div>
                 <div className="w-full max-w-full mx-2 my-4" ref={setContainerRef}>
-                    <Document file={'/pdf/ERD.pdf'} onLoadSuccess={onDocumentLoadSuccess} options={options} className="flex flex-col items-center">
+                    <Document file={'/pdf/Novel//Kunsue/Kunsue1.pdf'} onLoadSuccess={onDocumentLoadSuccess} options={options} className="flex flex-col items-center">
                         {Array.from(new Array(numPages), (el, index) => (
                             <Page
                                 key={`page_${index + 1}`} // กำหนด key สำหรับแต่ละหน้า
