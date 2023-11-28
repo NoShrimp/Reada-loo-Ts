@@ -64,7 +64,7 @@ export default function Myreading() {
                         </p>
                         <h1 className="text-3xl font-bold mt-20">Romance</h1>
                         {Novelromance.map((Novelromance: NovelCom, index: number) => (
-                    <div key={index} className="text-2xl max-w-wl flex items-center bg-gray-100 p-3 rounded-lg gap-4 my-10">
+                    <div key={index} className="text-2xl max-w-wl flex items-center bg-100 p-3 rounded-lg gap-4 my-10">
                         <li className="font-bold" key={Novelromance.id}>
                             {Novelromance.title}
                             {Novelromance.text}
@@ -73,7 +73,7 @@ export default function Myreading() {
                 ))}
                 <h1 className="text-3xl font-bold mt-20">Action</h1>
                 {Novelaction.map((Novelaction: NovelCom, index: number) => (
-                    <div key={index} className="text-2xl max-w-wl flex items-center bg-gray-100 p-3 rounded-lg gap-4 my-10">
+                    <div key={index} className="text-2xl max-w-wl flex items-center bg-100 p-3 rounded-lg gap-4 my-10">
                         <li className="font-bold" key={Novelaction.id}>
                             {Novelaction.title}
                             {Novelaction.text}

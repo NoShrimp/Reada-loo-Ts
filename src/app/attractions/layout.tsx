@@ -26,10 +26,10 @@ export default function DashboardLayout({children} : { children: React.ReactNode
                                 <div className="collapse-content"> 
                                     <ul className="menu rounded-box">
                                         <li><a href="/attractions/myreading">
-                                            Comedy
+                                            Romance
                                         </a></li>
                                         <li><a href="/attractions/myreading">
-                                            Romance
+                                            Action
                                         </a></li>
                                     </ul>
                                 </div>
