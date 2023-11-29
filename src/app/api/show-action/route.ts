@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { PrismaClient } from "@prisma/client";
-import Category from "@/app/attractions/Category/page";
+import Category from "@/app/attractions/favorite/page";
 
 const prisma = new PrismaClient();
 
