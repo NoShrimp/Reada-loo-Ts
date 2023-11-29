@@ -60,15 +60,15 @@ export default function Reading() {
                     <li><a>Item 3</a></li>
                 </ul>
                 </div>
-                <a className="btn btn-ghost text-md"><FaHome className="w-full" />หน้าแรก</a>
+                <a href="/attractions" className="btn btn-ghost text-md"><FaHome className="w-full" />หน้าแรก</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <h3 className="text-lg font-bold mb-2 pt-2">ตอนที่ 1 จ้วงหยวนแหง่หนานฉู่บทนํา</h3>
+                <h3 className="text-lg font-bold mb-2 pt-2">ชายาแพทย์ ตอนที่ 1</h3>
             </div>
             <div className="navbar-end pr-4">
             <div className="join">
-            <button className="join-item btn btn-primary btn-outline rounded-lg">Previous page</button>
-            <button className="join-item btn btn-secondary btn-outline rounded-lg">Next</button>
+                <a href="/attractions/reading/doctor/ep1" className="join-item btn btn-primary btn-outline rounded-lg">Previous page</a>
+                <a href="/attractions/reading/doctor/ep2" className="join-item btn btn-secondary btn-outline rounded-lg">Next</a>
             </div>
             </div>
             </div>
@@ -77,7 +77,7 @@ export default function Reading() {
                 <div>
                 </div>
                 <div className="w-full max-w-full mx-2 my-4" ref={setContainerRef}>
-                    <Document file={'/pdf/Novel//Kunsue/Kunsue1.pdf'} onLoadSuccess={onDocumentLoadSuccess} options={options} className="flex flex-col items-center">
+                    <Document file={'/pdf/Novel/doctor/doctor1.pdf'} onLoadSuccess={onDocumentLoadSuccess} options={options} className="flex flex-col items-center">
                         {Array.from(new Array(numPages), (el, index) => (
                             <Page
                                 key={`page_${index + 1}`} // กำหนด key สำหรับแต่ละหน้า
