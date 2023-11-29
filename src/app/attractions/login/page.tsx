@@ -9,9 +9,9 @@ export default function login() {
             </div>
             <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form className="card-body">
-                <button className="btn btn-info">Login with Twitter</button>
+                <button className="btn btn-info">Login with Google</button>
                 <button className="btn btn-success">Login with Line</button>
-                <div className="form-control">
+                {/* <div className="form-control">
                 <label className="label">
                     <span className="label-text">Email</span>
                 </label>
@@ -28,7 +28,7 @@ export default function login() {
                 </div>
                 <div className="form-control mt-6">
                 <button className="btn btn-primary">Login</button>
-                </div>
+                </div> */}
             </form>
             </div>
         </div>

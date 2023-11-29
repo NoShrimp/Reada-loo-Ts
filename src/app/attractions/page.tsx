@@ -35,7 +35,7 @@ export default function Attractions() {
                 <div className="carousel carousel-center rounded-box">
                     <div className="carousel-item">
                         <div className="card w-60 bg-secondary shadow-xl m-1">
-                            <figure><img src="https://i.ibb.co/cFSgVFn/Dimensional-Sovereign.jpg" alt="Shoes" /></figure>
+                            <figure><img className='w-full h-[180px]' src="https://i.ibb.co/cFSgVFn/Dimensional-Sovereign.jpg" alt="Shoes" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">
                                     มิติราชัน ตอนที่ 3 !!!
@@ -51,7 +51,7 @@ export default function Attractions() {
                     </div>
                     <div className="carousel-item">
                         <div className="card w-60 bg-secondary shadow-xl m-1">
-                            <figure><img src="https://i.ibb.co/G0jfrvP/book-detail-large-gif.jpg" alt="Shoes" /></figure>
+                            <figure><img className='w-full h-[180px]' src="https://i.ibb.co/G0jfrvP/book-detail-large-gif.jpg" alt="Shoes" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">
                                 ชายาแพทย์ขั้นหนึ่ง ตอนที่ 2!!
@@ -67,7 +67,7 @@ export default function Attractions() {
                     </div>
                     <div className="carousel-item">
                         <div className="card w-60 bg-secondary shadow-xl m-1">
-                            <figure><img src="https://i.ibb.co/FwwGzgw/PDF.jpg" alt="Shoes" /></figure>
+                            <figure><img className='w-full h-[180px]' src="https://i.ibb.co/FwwGzgw/PDF.jpg" alt="Shoes" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">
                                 มายทิชเชอร์คุณครูสุดสวย ตอนที่ 2 !!!
@@ -83,7 +83,7 @@ export default function Attractions() {
                     </div>
                     <div className="carousel-item">
                         <div className="card w-60 bg-secondary shadow-xl m-1">
-                            <figure><img src="https://i.ibb.co/0cWjwsr/6000073717-front-XXXL.webp" alt="Shoes" /></figure>
+                            <figure><img className='w-full h-[180px]' src="https://i.ibb.co/0cWjwsr/6000073717-front-XXXL.webp" alt="Shoes" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">
                                     หมาป่าแทนคุณ
@@ -99,7 +99,7 @@ export default function Attractions() {
                     </div>
                     <div className="carousel-item">
                         <div className="card w-60 bg-secondary shadow-xl m-1">
-                            <figure><img src="https://i.ibb.co/CH6My69/626917e2-JIx-GIr6-T-1.jpg" alt="Shoes" /></figure>
+                            <figure><img className='w-full h-[180px]' src="https://i.ibb.co/CH6My69/626917e2-JIx-GIr6-T-1.jpg" alt="Shoes" /></figure>
                             <div className="card-body">
                                 <h2 className="card-title">
                                 ตำนานสุยอวิ๋นยอดกุนซือ
