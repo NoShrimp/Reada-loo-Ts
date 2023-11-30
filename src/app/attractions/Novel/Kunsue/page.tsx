@@ -10,7 +10,8 @@ import { FaTrash } from "react-icons/fa";
 interface NovelCom {
     filter(arg0: (novelcomments: NovelCom) => boolean): React.SetStateAction<NovelCom[]>;
     id: string,
-    text: string
+    text: string,
+    date: string
 }
 
 
@@ -19,6 +20,26 @@ export default function Novel() {
     const [text, setText] = useState('')
 
     const router = useRouter()
+
+        // Get the current date and time
+        const currentDate = new Date();
+
+        // Format the date into "DD-MM-YYYY" format
+        const formattedDate = currentDate.toLocaleDateString('en-GB', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric',
+        });
+    
+        // Format the time into "HH:MM" format
+        const formattedTime = currentDate.toLocaleTimeString('en-GB', {
+            hour: '2-digit',
+            minute: '2-digit',
+        });
+    
+            // Combine the formatted date and time
+            const formattedDateTime = `${formattedTime} | ${formattedDate}`;
+    
 
     const [Novelcomments, setComments] = useState<NovelCom[]>([]);
 
@@ -32,10 +53,12 @@ export default function Novel() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                text
+                text,
+                date: formattedDateTime
             })
         })
         if (response.ok) {
+            window.location.reload()
             alert('แสดงความคิดเห็นเรียบร้อย!')
             setText('')
             // router.push('/comments')
@@ -86,16 +109,16 @@ export default function Novel() {
                         <div className="flex flex-col md:flex-row -mx-4">
                             <div className="md:flex-1 px-4 p-12">
                                 <div>
-                                    <img src="https://i.ibb.co/G0jfrvP/book-detail-large-gif.jpg" className="w-mix rounded-lg shadow-lg" />
+                                    <img src= "https://i.ibb.co/CH6My69/626917e2-JIx-GIr6-T-1.jpg" className="&quot;w-mix rounded-lg shadow-lg&quot;" />
                                 </div>
                             </div>
                             <div className="md:flex-1 px-4 p-20">
                                 <div className="badge badge-primary badge-outline font-bold p-3">Action</div>
-                                <div className="badge badge-secondary badge-outline font-bold p-3 m-1">Fantasy</div>
-                                <h2 className="text-4xl font-bold text-base-100 dark:text-white mb-2 pt-4">ชายาแพทย์ขั้นหนึ่ง</h2>
-                                <h3 className="text-lg font-bold text-base-100 dark:text-white mb-2 pt-2"><FaPen />ชิงอวิ๋นเช่อ</h3>
+                                <div className="badge badge-secondary badge-outline font-bold p-3 m-1">Adventure</div>
+                                <h2 className="text-4xl font-bold text-base-100 dark:text-white mb-2 pt-4">ตำนานสุยอวิ๋นยอดกุนซือ</h2>
+                                <h3 className="text-lg font-bold text-base-100 dark:text-white mb-2 pt-2"><FaPen />สุยปัวจู๋หลิว</h3>
                                 <p className="text-base-100 dark:text-gray-300 text-sm mb-4 pt-2">
-                                เมื่อเสิ่นเชียนม่อ นิติเวชสาวยุคปัจจุบันมาเกิดใหม่ในร่างของบุตรีชายาเอกจวนกั๋วกง มีใบหน้าเสียโฉมเพราะถูกไฟคลอกซ้ำยังถูกจับแต่งงานกับท่านอ๋องขาพิการ แม้เจ้าของร่างเดิมจะก้มหน้ายอมรับชะตากรรม แต่เสิ่นเชียนม่อคนใหม่ไม่มีทางยอมเด็ดขาด ทั้งคดียุ่งยากมากมายและปัญหาความริษยาภายในครอบครัว เธอจะฝ่าฟันได้อย่างไร
+                                ในยุคที่มีสงครามระหว่างแคว้น &quot;สุยอวิ๋น&quot; ผู้เกิดมาในครอบครัวยากจน พ่อแม่ตายจาก เขาพยายามสอบเข้ารับราชการเพื่ออยู่รอดในยุคสงคราม แต่กลับเข้าไปพัวพันกับวังวนของอำนาจ ทำให้เขากลายเป็นยอดกุนซือแห่งยุค เรื่องราวจะจบลงอย่างไร
                                 </p>
                                 <div className="flex -mx-2 mb-4">
                                     <div className="w-1/2 px-2">
@@ -130,12 +153,12 @@ export default function Novel() {
                                         </div>
                                     </td>
                                     <td className="font-bold">
-                                        ชายาแพทย์ขั้นหนึ่ง ตอนที่ 1
+                                    ตำนานสุยอวิ๋นยอดกุนซือ ตอนที่ 1
                                         <br />
                                     </td>
                                     <td className="text-center"><FaEye className="w-full pl-0" />234,199</td>
                                     <th>
-                                        <a href="/attractions/reading/doctor/ep1">
+                                        <a href="/attractions/reading/Kunsue/ep1">
                                             <button className="btn btn-secondary btn-xs">read</button>
                                         </a>
                                     </th>
@@ -152,12 +175,12 @@ export default function Novel() {
                                         </div>
                                     </td>
                                     <td className="font-bold">
-                                    ชายาแพทย์ขั้นหนึ่ง ตอนที่ 1
+                                    ตำนานสุยอวิ๋นยอดกุนซือ ตอนที่ 2
                                         <br />
                                     </td>
                                     <td className="text-center"><FaEye className="w-full pl-0" />194,654</td>
                                     <th>
-                                        <a href="/attractions/reading/doctor/ep2">
+                                        <a href="/attractions/reading/Kunsue/ep2">
                                             <button className="btn btn-secondary btn-xs">read</button>
                                         </a>
                                     </th>
@@ -202,7 +225,7 @@ export default function Novel() {
                 <h1 className="text-4xl text-accent font-bold pt-7 pb-7">รีวิวทั้งหมด</h1>
                 {Novelcomments.map((Novelcomments: NovelCom, index: number) => (
                     <div key={index} className="text-2xl max-w-wl flex items-center bg-gray-100 p-3 rounded-lg gap-4 my-10">
-                        <li className="font-bold" key={Novelcomments.id}>
+                        <div className="font-bold" key={Novelcomments.id}>
 
                             <div className="relative grid grid-cols-1 gap-4 p-4 mb-8 border rounded-xl bg-white shadow-lg">
                                 <div className="relative flex gap-4">
@@ -218,8 +241,9 @@ export default function Novel() {
                                     </div>
                                 </div>
                                 <p className="-mt-4 text-gray-500">{Novelcomments.text}</p>
+                                <p className="-mt-4 text-gray-500">{Novelcomments.date}</p>
                             </div>
-                        </li>
+                        </div>
                     </div>
                 ))}
             </div>

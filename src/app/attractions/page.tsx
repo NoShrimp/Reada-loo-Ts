@@ -205,7 +205,7 @@ export default function Attractions() {
                             <p>ผู้แต่ง สุยปัวจู๋หลิว <br />
                                 แนว adventure action </p>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Read</button>
+                            <a className='btn btn-primary' href="/attractions/Novel/Kunsue">Read</a>
                             </div>
                         </div>
                     </div>

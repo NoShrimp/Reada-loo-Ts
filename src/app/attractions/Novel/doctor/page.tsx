@@ -10,7 +10,8 @@ import { FaTrash } from "react-icons/fa";
 interface NovelCom {
     filter(arg0: (novelcomments: NovelCom) => boolean): React.SetStateAction<NovelCom[]>;
     id: string,
-    text: string
+    text: string,
+    date: string
 }
 
 
@@ -19,6 +20,26 @@ export default function Novel() {
     const [text, setText] = useState('')
 
     const router = useRouter()
+
+        // Get the current date and time
+        const currentDate = new Date();
+
+        // Format the date into "DD-MM-YYYY" format
+        const formattedDate = currentDate.toLocaleDateString('en-GB', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric',
+        });
+    
+        // Format the time into "HH:MM" format
+        const formattedTime = currentDate.toLocaleTimeString('en-GB', {
+            hour: '2-digit',
+            minute: '2-digit',
+        });
+    
+            // Combine the formatted date and time
+            const formattedDateTime = `${formattedTime} | ${formattedDate}`;
+    
 
     const [Novelcomments, setComments] = useState<NovelCom[]>([]);
 
@@ -32,10 +53,12 @@ export default function Novel() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                text
+                text,
+                date: formattedDateTime
             })
         })
         if (response.ok) {
+            window.location.reload()
             alert('แสดงความคิดเห็นเรียบร้อย!')
             setText('')
             // router.push('/comments')
@@ -202,7 +225,7 @@ export default function Novel() {
                 <h1 className="text-4xl text-accent font-bold pt-7 pb-7">รีวิวทั้งหมด</h1>
                 {Novelcomments.map((Novelcomments: NovelCom, index: number) => (
                     <div key={index} className="text-2xl max-w-wl flex items-center bg-gray-100 p-3 rounded-lg gap-4 my-10">
-                        <li className="font-bold" key={Novelcomments.id}>
+                        <div className="font-bold" key={Novelcomments.id}>
 
                             <div className="relative grid grid-cols-1 gap-4 p-4 mb-8 border rounded-xl bg-white shadow-lg">
                                 <div className="relative flex gap-4">
@@ -218,8 +241,9 @@ export default function Novel() {
                                     </div>
                                 </div>
                                 <p className="-mt-4 text-gray-500">{Novelcomments.text}</p>
+                                <p className="-mt-4 text-gray-500">{Novelcomments.date}</p>
                             </div>
-                        </li>
+                        </div>
                     </div>
                 ))}
             </div>
