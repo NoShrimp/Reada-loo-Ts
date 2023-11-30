@@ -135,14 +135,14 @@ export default function Attractions() {
                         </div>
                     </div>
                     <div className="card w-50 h-50 bg-base-100 shadow-xl image-full">
-                        <figure><img src="https://i.ibb.co/FwwGzgw/PDF.jpg" alt="Shoes" /></figure>
+                        <figure><img src="https://i.ibb.co/VJZj9Cx/2-1-13.jpg" alt="Shoes" /></figure>
                         <div className="card-body">
-                            <h2 className="card-title">มายทิชเชอร์คุณครูสุดสวย</h2>
-                            <p>ผู้แต่ง Hēiyè de bái yáng <br />
-                                แนว fantasy
+                            <h2 className="card-title">มหามรรคาเทียบเทียมฟ้า ภาค 2</h2>
+                            <p>ผู้แต่ง มาวนี่ <br />
+                                แนว Action
                             </p>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Read</button>
+                            <a href="attractions/Novel/doctor" className="btn btn-primary">read</a>
                             </div>
                         </div>
                     </div>
@@ -154,7 +154,7 @@ export default function Attractions() {
                                 แนว โรแมนติก
                             </p>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Read</button>
+                            <a href="attractions/Novel/doctor" className="btn btn-primary">read</a>
                             </div>
                         </div>
                     </div>
@@ -166,7 +166,7 @@ export default function Attractions() {
                                 แนว  โรแมนติก
                             </p>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Read</button>
+                            <a href="attractions/Novel/doctor" className="btn btn-primary">read</a>
                             </div>
                         </div>
                     </div>
@@ -178,7 +178,7 @@ export default function Attractions() {
                                 แนว โรแมนติก
                             </p>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Read</button>
+                            <a href="attractions/Novel/love" className="btn btn-primary">read</a>
                             </div>
                         </div>
                     </div>
@@ -415,7 +415,7 @@ export default function Attractions() {
                                         </td>
                                         <td>Action</td>
                                         <th>
-                                            <a href="#">
+                                            <a href="/attractions/Novel/Kunsue">
                                                 <button className="btn btn-ghost btn-xs">details</button>
                                             </a>
                                         </th>
