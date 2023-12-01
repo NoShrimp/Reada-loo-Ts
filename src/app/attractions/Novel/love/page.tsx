@@ -109,16 +109,16 @@ export default function Novel() {
                         <div className="flex flex-col md:flex-row -mx-4">
                             <div className="md:flex-1 px-4 p-12">
                                 <div>
-                                    <img src= "https://i.ibb.co/CH6My69/626917e2-JIx-GIr6-T-1.jpg" className="&quot;w-mix rounded-lg shadow-lg&quot;" />
+                                    <img src= "https://i.ibb.co/5vy8GH4/1000226624-back-XXXL.jpg" className="&quot;w-mix rounded-lg shadow-lg&quot;" />
                                 </div>
                             </div>
                             <div className="md:flex-1 px-4 p-20">
-                                <div className="badge badge-primary badge-outline font-bold p-3">Action</div>
-                                <div className="badge badge-secondary badge-outline font-bold p-3 m-1">Adventure</div>
-                                <h2 className="text-4xl font-bold text-base-100 dark:text-white mb-2 pt-4">ตำนานสุยอวิ๋นยอดกุนซือ</h2>
-                                <h3 className="text-lg font-bold text-base-100 dark:text-white mb-2 pt-2"><FaPen />สุยปัวจู๋หลิว</h3>
+                                <div className="badge badge-primary badge-outline font-bold p-3">Love</div>
+                                <div className="badge badge-secondary badge-outline font-bold p-3 m-1">Romance</div>
+                                <h2 className="text-4xl font-bold text-base-100 dark:text-white mb-2 pt-4">เล่ห์รัก</h2>
+                                <h3 className="text-lg font-bold text-base-100 dark:text-white mb-2 pt-2"><FaPen />ซูเสี่ยวหน่วน</h3>
                                 <p className="text-base-100 dark:text-gray-300 text-sm mb-4 pt-2">
-                                ในยุคที่มีสงครามระหว่างแคว้น &quot;สุยอวิ๋น&quot; ผู้เกิดมาในครอบครัวยากจน พ่อแม่ตายจาก เขาพยายามสอบเข้ารับราชการเพื่ออยู่รอดในยุคสงคราม แต่กลับเข้าไปพัวพันกับวังวนของอำนาจ ทำให้เขากลายเป็นยอดกุนซือแห่งยุค เรื่องราวจะจบลงอย่างไร
+                                ซูอิ่ง สายลับสาวจากโลกปัจจุบันเสียชีวิตจากการปฏิบัติงาน นางลืมตาขึ้นอีกครั้งในร่างของเด็กสาวผู้เป็นบุตรีของอัครมหาเสนาบดี ชีวิตใหม่ของนางมีเรื่องราวมากมาย ทั้งต้องเสแสร้งแกล้งทำโง่ต่อหน้าแม่เลี้ยง เพื่อเอาตัวรอดจากอันตรายรอบด้านไหนจะต้องคอยดูแลกิจการ หรือจะเป็นฐานะนางหน้ากากโบตั๋น แต่ที่ยากเย็นที่สุด คือนางต้องคอยสลัดบุรุษนิรนามที่ตามตอแย ทั้งๆ ที่นางช่วยชีวิตเขาเอาไว้ บุรุษผู้ที่ต่อมานำพาเรื่องราววุ่นวายมาสู่ชีวิตของนาง
                                 </p>
                                 <div className="flex -mx-2 mb-4">
                                     <div className="w-1/2 px-2">
@@ -158,7 +158,7 @@ export default function Novel() {
                                     </td>
                                     <td className="text-center"><FaEye className="w-full pl-0" />234,199</td>
                                     <th>
-                                        <a href="/attractions/reading/Kunsue/ep1">
+                                        <a href="/attractions/reading/love/ep1">
                                             <button className="btn btn-secondary btn-xs">read</button>
                                         </a>
                                     </th>
@@ -180,7 +180,7 @@ export default function Novel() {
                                     </td>
                                     <td className="text-center"><FaEye className="w-full pl-0" />194,654</td>
                                     <th>
-                                        <a href="/attractions/reading/Kunsue/ep2">
+                                        <a href="/attractions/reading/love/ep2">
                                             <button className="btn btn-secondary btn-xs">read</button>
                                         </a>
                                     </th>
