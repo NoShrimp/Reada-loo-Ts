@@ -102,7 +102,7 @@ export default function Novel() {
     }
 
     return (
-        <div>
+        <div className="bg-base-100">
             <section>
                 <div className="bg-neutral">
                     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

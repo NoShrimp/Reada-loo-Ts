@@ -14,7 +14,7 @@ export default function page() {
             <p className="mb-8 leading-relaxed opacity-50 text-xl ">Reada-loo เป็นมากกว่าการอ่าน เรามีนิยายมากมายให้คุณได้เลือกอ่านหรือคัดสรรค์จากทั่วไทย!</p>
             <div className="join join-vertical focus:outline-none hover:bg-opacity-80 rounded-lg lg:join-horizontal">
               <a href="/attractions " className="btn font-bold btn-primary join-item w-30 h-10">Let Start!</a>
-              <a href="/attractions/login" className="btn font-bold btn-secondary join-item w-30 h-10">Sign in</a>
+              <a href="/attractions/loginnew" className="btn font-bold btn-secondary join-item w-30 h-10">Sign in</a>
             </div>
           </div>
           <div  id="pattern" className="w-32 sm:w-40 lg:max-w-xl lg:w-full md:w-32 xl:w-5/6 bg-contain bg-no-repeat md:ml-40 xl:mr-16">

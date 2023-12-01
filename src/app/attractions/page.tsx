@@ -31,84 +31,80 @@ export default function Attractions() {
             </div>
 
             <section className="flex container content-center p-6 max-w-5xl">
-                <h2 className="font-sans font-semibold text-3xl p-4 m-5 grid-cols-6">Lastest reading</h2>
+                <h2 className="font-sans font-semibold text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl p-4 m-5 grid-cols-6">Lastest reading</h2>
                 <div className="carousel carousel-center rounded-box">
                     <div className="carousel-item">
-                        <div className="card w-60 bg-secondary shadow-xl m-1">
-                            <figure><img className='w-full h-[180px]' src="https://i.ibb.co/cFSgVFn/Dimensional-Sovereign.jpg" alt="Shoes" /></figure>
+                        <div className="card w-48 xl:w-60 bg-secondary shadow-xl m-1">
+                            <figure><img className='w-full h-[180px]' src="https://i.ibb.co/cFSgVFn/Dimensional-Sovereign.jpg" /></figure>
                             <div className="card-body">
-                                <h2 className="card-title">
+                                <h2 className="card-title text-base sm:text-sm md:text-base lg:text-lg xl:text-xl">
                                     มิติราชัน ตอนที่ 3 !!!
-                                    <div className="badge badge-warning">Update</div>
+                                    <div className="badge badge-warning text-md sm:text-sm">Update</div>
                                 </h2>
                                 <h3>오렌</h3>
                                 <div className="card-actions justify-end">
-                                    <div className="badge badge-outline">Action</div>
-                                    <div className="badge badge-outline">Fantasy</div>
+                                    <div className="badge badge-outline text-md sm:text-sm">Action</div>
+                                    <div className="badge badge-outline text-md sm:text-sm">Fantasy</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <div className="card w-60 bg-secondary shadow-xl m-1">
+                        <div className="card w-48 xl:w-60 bg-secondary shadow-xl m-1">
                             <figure><img className='w-full h-[180px]' src="https://i.ibb.co/G0jfrvP/book-detail-large-gif.jpg" alt="Shoes" /></figure>
                             <div className="card-body">
-                                <h2 className="card-title">
+                                <h2 className="card-title text-base sm:text-sm md:text-base lg:text-lg xl:text-xl">
                                 ชายาแพทย์ขั้นหนึ่ง ตอนที่ 2!!
                                     <div className="badge badge-warning">Update</div>
                                 </h2>
                                 <h3>Name Writer</h3>
                                 <div className="card-actions justify-end">
                                     <div className="badge badge-outline">Romance</div>
-                                    <div className="badge badge-outline">Comedy</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <div className="card w-60 bg-secondary shadow-xl m-1">
-                            <figure><img className='w-full h-[180px]' src="https://i.ibb.co/FwwGzgw/PDF.jpg" alt="Shoes" /></figure>
+                        <div className="card w-48 xl:w-60 bg-secondary shadow-xl m-1">
+                            <figure><img className='w-full h-[180px]' src="https://i.ibb.co/FwwGzgw/PDF.jpg" /></figure>
                             <div className="card-body">
-                                <h2 className="card-title">
+                                <h2 className="card-title text-base sm:text-sm md:text-base lg:text-lg xl:text-xl">
                                 มายทิชเชอร์คุณครูสุดสวย ตอนที่ 2 !!!
                                     <div className="badge badge-warning">Update</div>
                                 </h2>
                                 <h3>Name Writer</h3>
                                 <div className="card-actions justify-end">
                                     <div className="badge badge-outline">Romance</div>
-                                    <div className="badge badge-outline">Rom-Com</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <div className="card w-60 bg-secondary shadow-xl m-1">
-                            <figure><img className='w-full h-[180px]' src="https://i.ibb.co/0cWjwsr/6000073717-front-XXXL.webp" alt="Shoes" /></figure>
+                        <div className="card w-48 xl:w-60 bg-secondary shadow-xl m-1">
+                            <figure><img className='w-full h-[180px]' src="https://i.ibb.co/0cWjwsr/6000073717-front-XXXL.webp" /></figure>
                             <div className="card-body">
-                                <h2 className="card-title">
+                                <h2 className="card-title text-base sm:text-sm md:text-base lg:text-lg xl:text-xl">
                                     หมาป่าแทนคุณ
                                     <div className="badge badge-warning">Update</div>
                                 </h2>
                                 <h3>Name Writer</h3>
                                 <div className="card-actions justify-end">
                                     <div className="badge badge-outline">Sci-Fi</div>
-                                    <div className="badge badge-outline">Rom-Com</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <div className="card w-60 bg-secondary shadow-xl m-1">
-                            <figure><img className='w-full h-[180px]' src="https://i.ibb.co/CH6My69/626917e2-JIx-GIr6-T-1.jpg" alt="Shoes" /></figure>
+                        <div className="card w-48 xl:w-60 bg-secondary shadow-xl m-1">
+                            <figure><img className='w-full h-[180px]' src="https://i.ibb.co/CH6My69/626917e2-JIx-GIr6-T-1.jpg"/></figure>
                             <div className="card-body">
-                                <h2 className="card-title">
+                                <h2 className="card-title text-base sm:text-sm md:text-base lg:text-lg xl:text-xl">
                                 ตำนานสุยอวิ๋นยอดกุนซือ
                                     <div className="badge badge-warning">Update</div>
                                 </h2>
                                 <h3>Name Writer</h3>
                                 <div className="card-actions justify-end">
                                     <div className="badge badge-outline">Sci-Fi</div>
-                                    <div className="badge badge-outline">Rom-Com</div>
                                 </div>
                             </div>
                         </div>
@@ -117,65 +113,60 @@ export default function Attractions() {
             </section>
 
             <section className="container p-6 max-w-5xl">
-                <h1 className="font-sans font-semibold text-4xl">Category </h1>
+                <h1 className="font-sans font-semibold text-xl xl:text-4xl lg:text-3xl md:text=2xl sm:text-xl">Category </h1>
                 <div className="flex">
-                    <h2 className="font-sans font-semibold text-3xl p-7">Love Novel <span><a href='' className="link font-sans text-lg text-secondary-focus">View all</a></span></h2>
+                    <h2 className="font-sans font-semibold text-base xl:text-3xl lg:text-2xl md:text=xl sm:text-base p-7">Love Novel </h2>
                 </div>
-                <div className="grid grid-cols-5 gap-4 p-3">
-                    <div className="card w-50 h-50 bg-base-100 shadow-xl image-full">
-                        <figure><img src="https://i.ibb.co/G0jfrvP/book-detail-large-gif.jpg" alt="Shoes" /></figure>
+                <div className="grid grid-col-3 sm:grid-col-3 md:grid-col-3 lg:grid-col-4 xl:grid-cols-5 gap-3 p-2">
+                    <div className="card bg-base-100 shadow-xl image-full">
+                        <figure><img src="https://i.ibb.co/G0jfrvP/book-detail-large-gif.jpg" className="w-full" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">ชายาแพทย์ขั้นหนึ่ง</h2>
                             <p>ผู้แต่ง ชิงอวิ๋นเช่อ  <br />
-                                แนว โรแมนติก
                             </p>
                             <div className="card-actions justify-end">
                                 <a href="attractions/Novel/doctor" className="btn btn-primary">read</a>
                             </div>
                         </div>
                     </div>
-                    <div className="card w-50 h-50 bg-base-100 shadow-xl image-full">
-                        <figure><img src="https://i.ibb.co/VJZj9Cx/2-1-13.jpg" alt="Shoes" /></figure>
+                    <div className="card bg-base-100 shadow-xl image-full">
+                        <figure><img src="https://i.ibb.co/VJZj9Cx/2-1-13.jpg" className="w-full" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">มหามรรคาเทียบเทียมฟ้า ภาค 2</h2>
                             <p>ผู้แต่ง มาวนี่ <br />
-                                แนว Action
                             </p>
                             <div className="card-actions justify-end">
                             <a href="attractions/Novel/doctor" className="btn btn-primary">read</a>
                             </div>
                         </div>
                     </div>
-                    <div className="card w-50 h-50 bg-base-100 shadow-xl image-full">
-                        <figure><img src="https://i.ibb.co/2vrkN6S/D9d0-I33aglis-IX2-Z.jpg" alt="Shoes" /></figure>
+                    <div className="card bg-base-100 shadow-xl image-full">
+                        <figure><img src="https://i.ibb.co/2vrkN6S/D9d0-I33aglis-IX2-Z.jpg" className="w-full"/></figure>
                         <div className="card-body">
                             <h2 className="card-title">คุณหนูสี่สตรีเปื้อนเลือด</h2>
                             <p>ผู้แต่ง Yukuai xiao fei rou <br />
-                                แนว โรแมนติก
                             </p>
                             <div className="card-actions justify-end">
                             <a href="attractions/Novel/doctor" className="btn btn-primary">read</a>
                             </div>
                         </div>
                     </div>
-                    <div className="card w-50 h-50 bg-base-100 shadow-xl image-full">
-                        <figure><img src="https://i.ibb.co/0cWjwsr/6000073717-front-XXXL.webp" alt="Shoes" /></figure>
+                    <div className="card bg-base-100 shadow-xl image-full">
+                        <figure><img src="https://i.ibb.co/0cWjwsr/6000073717-front-XXXL.webp" className="w-full" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">หมาป่าแทนคุณ</h2>
                             <p>ผู้แต่ง Gong Xin Wen <br />
-                                แนว  โรแมนติก
                             </p>
                             <div className="card-actions justify-end">
                             <a href="attractions/Novel/doctor" className="btn btn-primary">read</a>
                             </div>
                         </div>
                     </div>
-                    <div className="card w-50 h-50 bg-base-100 shadow-xl image-full">
-                        <figure><img src="https://i.ibb.co/5vy8GH4/1000226624-back-XXXL.jpg" alt="Shoes" /></figure>
+                    <div className="card bg-base-100 shadow-xl image-full">
+                        <figure><img src="https://i.ibb.co/5vy8GH4/1000226624-back-XXXL.jpg" className="w-full" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">เล่ห์รัก</h2>
                             <p>ผู้แต่ง ซูเสี่ยวหน่วน <br />
-                                แนว โรแมนติก
                             </p>
                             <div className="card-actions justify-end">
                             <a href="attractions/Novel/love" className="btn btn-primary">read</a>
@@ -184,37 +175,34 @@ export default function Attractions() {
                     </div>
                 </div>
 
-                <h2 className="font-sans font-semibold text-3xl p-7">Action <span><a href='' className="link font-sans text-lg text-secondary-focus">View all</a></span></h2>
-                <div className="grid grid-cols-5 gap-4 p-3">
-                    <div className="card w-50 h-50 bg-base-100 shadow-xl image-full">
-                        <figure><img src="https://i.ibb.co/cFSgVFn/Dimensional-Sovereign.jpg" alt="Shoes" /></figure>
+                <h2 className="font-sans font-semibold text-3xl p-7">Action</h2>
+                <div className="grid grid-col-2 sm:grid-col-2 md:grid-col-3 lg:grid-col-4 xl:grid-cols-5 gap-3 p-2">
+                    <div className="card bg-base-100 shadow-xl image-full">
+                        <figure><img src="https://i.ibb.co/cFSgVFn/Dimensional-Sovereign.jpg" className="w-full" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Dimension Sorvereign ภาค 1</h2>
-                            <p>ผู้แต่ง 오렌 <br />
-                                แนว Action fantasy
+                            <p>ผู้แต่ง 오렌
                             </p>
                             <div className="card-actions justify-end">
                                 <a className='btn btn-primary' href="/attractions/Novel/dimension">Read</a>
                             </div>
                         </div>
                     </div>
-                    <div className="card w-50 h-50 bg-base-100 shadow-xl image-full">
-                        <figure><img src="https://i.ibb.co/CH6My69/626917e2-JIx-GIr6-T-1.jpg" alt="Shoes" /></figure>
+                    <div className="card bg-base-100 shadow-xl image-full">
+                        <figure><img src="https://i.ibb.co/CH6My69/626917e2-JIx-GIr6-T-1.jpg" className="w-full" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">ตำนานสุยอวิ๋นยอดกุนซือ</h2>
-                            <p>ผู้แต่ง สุยปัวจู๋หลิว <br />
-                                แนว adventure action </p>
+                            <p>ผู้แต่ง สุยปัวจู๋หลิว</p>
                             <div className="card-actions justify-end">
                             <a className='btn btn-primary' href="/attractions/Novel/Kunsue">Read</a>
                             </div>
                         </div>
                     </div>
-                    <div className="card w-50 h-50 bg-base-100 shadow-xl image-full">
-                        <figure><img src="https://i.ibb.co/cFSgVFn/Dimensional-Sovereign.jpg" alt="Shoes" /></figure>
+                    <div className="card bg-base-100 shadow-xl image-full">
+                        <figure><img src="https://i.ibb.co/cFSgVFn/Dimensional-Sovereign.jpg" className="w-full" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Dimension Sorvereign ภาค 2</h2>
-                            <p>ผู้แต่ง 오렌 <br />
-                                แนว Action fantasy</p>
+                            <p>ผู้แต่ง 오렌</p>
                             <div className="card-actions justify-end">
                                 <button className="btn btn-primary">Read</button>
                             </div>
@@ -223,15 +211,13 @@ export default function Attractions() {
                     <div className="card w-50 h-50 bg-base-100 shadow-xl image-full">
                         <figure><img src="https://images.unsplash.com/photo-1594380643296-81144c8c90c4?auto=format&fit=crop&q=80&w=2940&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Shoes" /></figure>
                         <div className="card-body">
-                            <h2 className="card-title">Coming soon</h2>
-                            <p>Reada-loo</p>
+                            <h2 className="card-title text-center mt-20">Coming soon</h2>
                         </div>
                     </div>
                     <div className="card w-50 h-50 bg-base-100 shadow-xl image-full">
                         <figure><img src="https://images.unsplash.com/photo-1594380643296-81144c8c90c4?auto=format&fit=crop&q=80&w=2940&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Shoes" /></figure>
                         <div className="card-body">
-                            <h2 className="card-title">Coming soon</h2>
-                            <p>Reada-loo</p>
+                            <h2 className="card-title text-center mt-20">Coming soon</h2>
                         </div>
                     </div>
                 </div>
@@ -239,9 +225,26 @@ export default function Attractions() {
 
             <section className="container p-6 max-w-5xl">
                 <h1 className="font-sans font-semibold text-4xl">You may also like</h1>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-col-1 sm:grid-col-1 md:grid-col-2 lg:grid-col-3 xl:grid-cols-3 gap-4">
                     <div className="card card-side bg-base-100 shadow-xl">
-                        <figure><img src="/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" /></figure>
+                        <div className="card-body">
+                            <h2 className="card-title">Dimension มิติราชัน</h2>
+                            <p>Top 1 reading Action</p>
+                            <div className="card-actions justify-end">
+                                <button className="btn btn-primary">Read</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card card-side bg-base-100 shadow-xl">
+                        <div className="card-body">
+                            <h2 className="card-title">ชายาแพทย์ขั้นหนึ่ง</h2>
+                            <p>Top 1 reading Romance</p>
+                            <div className="card-actions justify-end">
+                                <button className="btn btn-primary">Read</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card card-side bg-base-100 shadow-xl">
                         <div className="card-body">
                             <h2 className="card-title">Title!</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
@@ -251,7 +254,6 @@ export default function Attractions() {
                         </div>
                     </div>
                     <div className="card card-side bg-base-100 shadow-xl">
-                        <figure><img src="/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Title!</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
@@ -261,7 +263,6 @@ export default function Attractions() {
                         </div>
                     </div>
                     <div className="card card-side bg-base-100 shadow-xl">
-                        <figure><img src="/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Title!</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
@@ -271,27 +272,6 @@ export default function Attractions() {
                         </div>
                     </div>
                     <div className="card card-side bg-base-100 shadow-xl">
-                        <figure><img src="/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">Title!</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Read</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card card-side bg-base-100 shadow-xl">
-                        <figure><img src="/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title">Title!</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Read</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card card-side bg-base-100 shadow-xl">
-                        <figure><img src="/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" /></figure>
                         <div className="card-body">
                             <h2 className="card-title">Title!</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
@@ -332,7 +312,7 @@ export default function Attractions() {
                                             <div className="flex items-center space-x-3">
 
                                                 <div>
-                                                    <div className="font-bold">มังกรผู้พิชิต หงส์คู่บัลลังก์</div>
+                                                    <div className="font-bold">ชายาแพทย์ขั้นหนึ่ง</div>
                                                     <div className="text-sm opacity-50">เม่ยอวี๋เจ่อ (Mei Yu Zhe) </div>
                                                 </div>
                                             </div>
@@ -343,7 +323,7 @@ export default function Attractions() {
                                         </td>
                                         <td>Romantic</td>
                                         <th>
-                                            <a href="#">
+                                            <a href="/attractions/Novel/doctor">
                                                 <button className="btn btn-ghost btn-xs">details</button>
                                             </a>
                                         </th>
@@ -367,7 +347,7 @@ export default function Attractions() {
                                         </td>
                                         <td>Romantic</td>
                                         <th>
-                                            <a href="#">
+                                            <a href="/attractions/Novel/love">
                                                 <button className="btn btn-ghost btn-xs">details</button>
                                             </a>
                                         </th>
