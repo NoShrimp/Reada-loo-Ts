@@ -120,7 +120,7 @@ export default function Novel() {
                                 <p className="text-base-100 dark:text-gray-300 text-sm mb-4 pt-2">
                                 ซูอิ่ง สายลับสาวจากโลกปัจจุบันเสียชีวิตจากการปฏิบัติงาน นางลืมตาขึ้นอีกครั้งในร่างของเด็กสาวผู้เป็นบุตรีของอัครมหาเสนาบดี ชีวิตใหม่ของนางมีเรื่องราวมากมาย ทั้งต้องเสแสร้งแกล้งทำโง่ต่อหน้าแม่เลี้ยง เพื่อเอาตัวรอดจากอันตรายรอบด้านไหนจะต้องคอยดูแลกิจการ หรือจะเป็นฐานะนางหน้ากากโบตั๋น แต่ที่ยากเย็นที่สุด คือนางต้องคอยสลัดบุรุษนิรนามที่ตามตอแย ทั้งๆ ที่นางช่วยชีวิตเขาเอาไว้ บุรุษผู้ที่ต่อมานำพาเรื่องราววุ่นวายมาสู่ชีวิตของนาง
                                 </p>
-                                <div className="flex -mx-2 mb-4">
+                                {/* <div className="flex -mx-2 mb-4">
                                     <div className="w-1/2 px-2">
                                         <button className="w-full bg-accent dark:bg-gray-600 py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Add to favorite</button>
                                     </div>
@@ -128,7 +128,7 @@ export default function Novel() {
                                         <FaEye className="text-base-100" />
                                         <h3 className="text-lg font-bold text-base-100 dark:text-white mb-2">10,000,000</h3>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

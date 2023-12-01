@@ -120,7 +120,7 @@ export default function Novel() {
                                 <p className="text-base-100 dark:text-gray-300 text-sm mb-4 pt-2">
                                 ในยุคที่มีสงครามระหว่างแคว้น &quot;สุยอวิ๋น&quot; ผู้เกิดมาในครอบครัวยากจน พ่อแม่ตายจาก เขาพยายามสอบเข้ารับราชการเพื่ออยู่รอดในยุคสงคราม แต่กลับเข้าไปพัวพันกับวังวนของอำนาจ ทำให้เขากลายเป็นยอดกุนซือแห่งยุค เรื่องราวจะจบลงอย่างไร
                                 </p>
-                                <div className="flex -mx-2 mb-4">
+                                {/* <div className="flex -mx-2 mb-4">
                                     <div className="w-1/2 px-2">
                                         <button className="w-full bg-accent dark:bg-gray-600 py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Add to favorite</button>
                                     </div>
@@ -128,7 +128,7 @@ export default function Novel() {
                                         <FaEye className="text-base-100" />
                                         <h3 className="text-lg font-bold text-base-100 dark:text-white mb-2">10,000,000</h3>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
