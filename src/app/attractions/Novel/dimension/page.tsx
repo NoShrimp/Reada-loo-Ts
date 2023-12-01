@@ -100,8 +100,9 @@ export default function Novel() {
         }
     }
 
+
     return (
-        <div>
+        <div className="bg-base-100">
             <section>
                 <div className="bg-neutral">
                     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -248,48 +249,33 @@ export default function Novel() {
                         </form>
                     </div>
 
+                    <h1 className="text-4xl text-accent font-bold pt-7 pb-10">รีวิวทั้งหมด</h1>
+                    {Novelcomments.map((Novelcomments: NovelCom, index: number) => (
+                    <div key={index}>
+                        <div className="font-bold" key={Novelcomments.id}>
                     <div className="relative grid grid-cols-1 gap-4 p-4 mb-8 border rounded-xl bg-white shadow-lg">
                         <div className="relative flex gap-4">
-                            <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" className="relative rounded-full -top-8 -mb-4 bg-white border h-20 w-20" />
+                            <img src="https://i.ibb.co/0Xj0sPy/pom-pom-honkai-star-rail-by-mieaka-dfwi0ug-pre.jpg" className="relative rounded-full -top-8 -mb-4 bg-white border h-20 w-20" />
                             <div className="flex flex-col w-full">
                                 <div className="flex flex-row justify-between">
                                     <p className="relative text-xl font-bold whitespace-nowrap truncate overflow-hidden">COMMENTOR</p>
                                     <a className="text-gray-500 text-xl" href="#">
-                                        <i><FaEdit className="pb-2 w-6 h-6 text-accent" /></i>
-                                        <i><FaTrash className="text-secondary" /></i>
+                                        <i><FaEdit className="pb-2 w-6 h-6 text-accent"/></i>
+                                        <i><FaTrash className="text-secondary " onClick={() => handleDelete(Novelcomments)}/></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <p className="-mt-4 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Maxime quisquam vero adipisci beatae voluptas dolor ame.</p>
+                        <p className="-mt-4 text-base text-gray-500">{Novelcomments.text}</p>
+                                <p className="-mt-4 text text-gray-500">{Novelcomments.date}</p>
                     </div>
+                    </div>
+                    </div>
+                    ))}
                 </div>
             </section>
             <div className="w-full max-w-5xl mx-auto text-center">
-                <h1 className="text-4xl text-accent font-bold pt-7 pb-7">รีวิวทั้งหมด</h1>
-                {Novelcomments.map((Novelcomments: NovelCom, index: number) => (
-                    <div key={index} className="text-2xl max-w-wl flex items-center bg-gray-100 p-3 rounded-lg gap-4 my-10">
-                        <div className="font-bold" key={Novelcomments.id}>
 
-                            <div className="relative grid grid-cols-1 gap-4 p-4 mb-8 border rounded-xl bg-white shadow-lg">
-                                <div className="relative flex gap-4">
-                                    <img src="https://i.ibb.co/yQFg9D9/pom-pom-honkai-star-rail-by-mieaka-dfwi0ug-pre.jpg" className="relative rounded-full -top-8 -mb-4 bg-white border h-20 w-20" />
-                                    <div className="flex flex-col w-full">
-                                        <div className="flex flex-row justify-between">
-                                            <p className="relative text-xl font-bold whitespace-nowrap truncate overflow-hidden">COMMENTOR</p>
-                                            <a className="text-gray-500 text-xl" href="#">
-                                                <i><FaEdit className="pb-2 w-6 h-6 text-accent" /></i>
-                                                <i><FaTrash className="text-secondary" onClick={() => handleDelete(Novelcomments)} /></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p className="-mt-4 text-gray-500">{Novelcomments.text}</p>
-                                <p className="-mt-4 text-gray-300">{Novelcomments.date}</p>
-                            </div>
-                        </div>
-                    </div>
-                ))}
             </div>
         </div>
     )

@@ -42,28 +42,12 @@ export default function Reading() {
     return (
         <div className="bg-neutral">
             <section className="container max-w-6xl">
-                <div className="navbar pt-10 bg-base-100">
+                <div className="navbar pt-5 bg-base-100 shadow-xl">
                     <div className="navbar-start">
-                        <div className="dropdown">
-                            <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                            </label>
-                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                <li><a>Item 1</a></li>
-                                <li>
-                                    <a>Parent</a>
-                                    <ul className="p-2">
-                                        <li><a>Submenu 1</a></li>
-                                        <li><a>Submenu 2</a></li>
-                                    </ul>
-                                </li>
-                                <li><a>Item 3</a></li>
-                            </ul>
-                        </div>
                         <a href="/attractions" className="btn btn-ghost text-md"><FaHome className="w-full" />หน้าแรก</a>
                     </div>
                     <div className="navbar-center hidden lg:flex">
-                        <h3 className="text-lg font-bold mb-2 pt-2">Dimension Sorvereign มิติราชัน ตอนที่ 1</h3>
+                        <h3 className="text-base lg:text-lg md:text-base sm:text-sm font-bold mb-2 pt-2">Dimension Sorvereign มิติราชัน ตอนที่ 1</h3>
                     </div>
                     <div className="navbar-end pr-4">
                         <div className="join">
@@ -73,7 +57,7 @@ export default function Reading() {
                     </div>
                 </div>
                 <div className="bg-white text-white dark:bg-black">
-                    <div className="flex flex-col items-center my-2 py-2">
+                    <div className="flex flex-col items-center ">
                         <div>
                         </div>
                         <div className="w-full max-w-full mx-2 my-4" ref={setContainerRef}>

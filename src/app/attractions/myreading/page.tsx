@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { BiSolidCategory } from "react-icons/bi";
-import { useState , useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { GiHeartStake } from "react-icons/gi";
 
@@ -73,559 +73,110 @@ export default function Myreading() {
             </section>
 
             <section>
-                <div className="flex grid grid-cols-2 gap-2 items-center mt-10">
-                    <div aria-label="card" className="p-8 rounded-3xl bg-white max-w-sm w-full shadow-lg">
-                    <div aria-label="header" className="flex items-center space-x-2">
-                        <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-8 h-8 shrink-0"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        >
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11"></path>
-                        </svg>
-                        <div className="space-y-0.5 flex-1">
-                        <h3
-                            className="font-bold text-lg tracking-tight text-gray-900 leading-tight"
-                        >
-                            # ROMANTIC
-                        </h3>
+                <div className="flex flex-col w-full gap-y-5 mt-10 items-center">
+                    <div aria-label="card" className="p-8 rounded-3xl bg-base-100 max-w-3xl w-max xl:w-full lg:w-full sm:w-max shadow-lg">
+                        <div aria-label="header" className="flex items-center space-x-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" /></svg>
+                            <div className="space-y-0.5 flex-1">
+                                <h3
+                                    className="font-bold text-lg tracking-tight text-gray-900 leading-tight"
+                                >
+                                    # ROMANTIC
+                                </h3>
+                            </div>
+                        </div>
+                        <div aria-label="content" className="mt-9 grid gap-2.5">
+                            {Novelromance.map((Novelromance: NovelCom, index: number) => (
+                                <div key={index} className="flex items-center space-x-4 p-3.5 rounded-full bg-secondary">
+                                    <a href="#">
+                                        <div className="flex items-center space-x-4 p-3.5 rounded-full bg-secondary">
+                                            <span
+                                                className="flex items-center justify-center w-10 h-10 shrink-0 rounded-full bg-base-100 text-gray-900"
+                                            >
+                                                <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/book.png" alt="book" />
+                                            </span>
+                                            <div className="flex flex-col flex-1">
+                                                <div className="font-bold" key={Novelromance.id}>
+                                                    {Novelromance.title}
+                                                    {Novelromance.text}
+                                                </div>
+                                            </div>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                className="w-5 h-5 shrink-0"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                stroke-width="2"
+                                                stroke="currentColor"
+                                                fill="none"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            >
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                <path d="M9 6l6 6l-6 6"></path>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            ))}
+
 
                         </div>
                     </div>
-                    <div aria-label="content" className="mt-9 grid gap-2.5">
-                        <a href="#">
-                        <div
-                            className="flex items-center space-x-4 p-3.5 rounded-full bg-gray-100"
-                        >
-                            <span
-                            className="flex items-center justify-center w-10 h-10 shrink-0 rounded-full bg-white text-gray-900"
-                            >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-6 h-6"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M8 16a3 3 0 0 1 -3 3"></path>
-                                <path d="M16 16a3 3 0 0 0 3 3"></path>
-                                <path d="M12 16v4"></path>
-                                <path
-                                d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
-                                ></path>
-                                <path d="M7 13v-3a1 1 0 0 1 1 -1h8a1 1 0 0 1 1 1v3"></path>
-                            </svg>
-                            </span>
-                            <div className="flex flex-col flex-1">
-                            <h3 className="text-sm font-medium">Air Conditioner</h3>
-                            <div className="divide-x divide-gray-200 mt-auto">
-                                <span
-                                className="inline-block px-3 text-xs leading-none text-gray-400 font-normal first:pl-0"
-                                >2 unit </span>
-                                <span
-                                className="inline-block px-3 text-xs leading-none text-gray-400 font-normal first:pl-0"
-                                >18kWh</span>
-                            </div>
-                            </div>
-                            <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="w-5 h-5 shrink-0"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            stroke-width="2"
-                            stroke="currentColor"
-                            fill="none"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            >
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M9 6l6 6l-6 6"></path>
-                            </svg>
-                        </div>
-                        </a>
-                        <a href="#">
-                        <div
-                            className="flex items-center space-x-4 p-3.5 rounded-full bg-gray-100"
-                        >
-                            <span
-                            className="flex items-center justify-center w-10 h-10 shrink-0 rounded-full bg-white text-gray-900"
-                            >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-6 h-6"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                d="M3 13m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
-                                ></path>
-                                <path d="M17 17l0 .01"></path>
-                                <path d="M13 17l0 .01"></path>
-                                <path d="M15 13l0 -2"></path>
-                                <path d="M11.75 8.75a4 4 0 0 1 6.5 0"></path>
-                                <path d="M8.5 6.5a8 8 0 0 1 13 0"></path>
-                            </svg>
-                            </span>
-                            <div className="flex flex-col flex-1">
-                            <h3 className="text-sm font-medium">Wi-Fi Router</h3>
-                            <div className="divide-x divide-gray-200 mt-auto">
-                                <span
-                                className="inline-block px-3 text-xs leading-none text-gray-400 font-normal first:pl-0"
-                                >1 unit</span
-                                >
-                                <span
-                                className="inline-block px-3 text-xs leading-none text-gray-400 font-normal first:pl-0"
-                                >8kWh</span
-                                >
-                            </div>
-                            </div>
-                            <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="w-5 h-5 shrink-0"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            stroke-width="2"
-                            stroke="currentColor"
-                            fill="none"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            >
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M9 6l6 6l-6 6"></path>
-                            </svg>
-                        </div>
-                        </a>
-                        <a href="#">
-                        <div
-                            className="flex items-center space-x-4 p-3.5 rounded-full bg-gray-100"
-                        >
-                            <span
-                            className="flex items-center justify-center w-10 h-10 shrink-0 rounded-full bg-white text-gray-900"
-                            >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-6 h-6"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z"
-                                ></path>
-                                <path d="M7 20h10"></path>
-                                <path d="M9 16v4"></path>
-                                <path d="M15 16v4"></path>
-                            </svg>
-                            </span>
-                            <div className="flex flex-col flex-1">
-                            <h3 className="text-sm font-medium">Smart Tv</h3>
-                            <div className="divide-x divide-gray-200 mt-auto">
-                                <span
-                                className="inline-block px-3 text-xs leading-none text-gray-400 font-normal first:pl-0"
-                                >2 unit</span
-                                >
-                                <span
-                                className="inline-block px-3 text-xs leading-none text-gray-400 font-normal first:pl-0"
-                                >12kWh</span
-                                >
-                            </div>
-                            </div>
-                            <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="w-5 h-5 shrink-0"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            stroke-width="2"
-                            stroke="currentColor"
-                            fill="none"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            >
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M9 6l6 6l-6 6"></path>
-                            </svg>
-                        </div>
-                        </a>
-                        <a href="#">
-                        <div
-                            className="flex items-center space-x-4 p-3.5 rounded-full bg-gray-100"
-                        >
-                            <span
-                            className="flex items-center justify-center w-10 h-10 shrink-0 rounded-full bg-white text-gray-900"
-                            >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-6 h-6"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                d="M7.502 19.423c2.602 2.105 6.395 2.105 8.996 0c2.602 -2.105 3.262 -5.708 1.566 -8.546l-4.89 -7.26c-.42 -.625 -1.287 -.803 -1.936 -.397a1.376 1.376 0 0 0 -.41 .397l-4.893 7.26c-1.695 2.838 -1.035 6.441 1.567 8.546z"
-                                ></path>
-                            </svg>
-                            </span>
-                            <div className="flex flex-col flex-1">
-                            <h3 className="text-sm font-medium">Humidifier</h3>
-                            <div className="divide-x divide-gray-200 mt-auto">
-                                <span
-                                className="inline-block px-3 text-xs leading-none text-gray-400 font-normal first:pl-0"
-                                >1 unit</span
-                                >
-                                <span
-                                className="inline-block px-3 text-xs leading-none text-gray-400 font-normal first:pl-0"
-                                >2kWh</span
-                                >
-                            </div>
-                            </div>
-                            <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="w-5 h-5 shrink-0"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            stroke-width="2"
-                            stroke="currentColor"
-                            fill="none"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            >
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M9 6l6 6l-6 6"></path>
-                            </svg>
-                        </div>
-                        </a>
-                    </div>
-                    </div>
-                    
-                    <div aria-label="card" className="p-8 rounded-3xl bg-white max-w-sm w-full shadow-lg">
-                    <div aria-label="header" className="flex items-center space-x-2">
-                        <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-8 h-8 shrink-0"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        >
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11"></path>
-                        </svg>
-                        <div className="space-y-0.5 flex-1">
-                        <h3
-                            className="font-bold text-lg tracking-tight text-gray-900 leading-tight"
-                        >
-                            # ACTION
-                        </h3>
 
+                    <div aria-label="card" className="p-8 rounded-3xl bg-base-100 max-w-3xl w-max xl:w-full lg:w-full sm:w-max shadow-lg">
+                        <div aria-label="header" className="flex items-center space-x-2">
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M10.381 21.275l-6.631-3.787 1.391-2.384 6.631 3.787-1.391 2.384zm7.82-19.68c-1.957-1.134-3.641-1.665-5.032-1.588-2.093.117-3.933 1.233-3.621 4.89-.394-2.267-1.817-4.178-3.5-3.869-2.234.41-1.649 3.302-1.435 5.706.191 2.155.408 4.598-.7 6.502l-2.913 4.991 10.11 5.773 2.907-4.984c1.429-2.435 3.055-3.631 4.63-4.789 1.068-.787 4.353-2.998 4.353-6.193 0-2.645-2.251-4.962-4.799-6.439" /></svg>
+                            <div className="space-y-0.5 flex-1">
+                                <h3
+                                    className="font-bold text-lg tracking-tight text-gray-900 leading-tight"
+                                >
+                                    # ACTION
+                                </h3>
+
+                            </div>
                         </div>
-                    </div>
-                    <div aria-label="content" className="mt-9 grid gap-2.5">
-                        <a href="#">
-                        <div
-                            className="flex items-center space-x-4 p-3.5 rounded-full bg-gray-100"
-                        >
-                            <span
-                            className="flex items-center justify-center w-10 h-10 shrink-0 rounded-full bg-white text-gray-900"
-                            >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-6 h-6"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M8 16a3 3 0 0 1 -3 3"></path>
-                                <path d="M16 16a3 3 0 0 0 3 3"></path>
-                                <path d="M12 16v4"></path>
-                                <path
-                                d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
-                                ></path>
-                                <path d="M7 13v-3a1 1 0 0 1 1 -1h8a1 1 0 0 1 1 1v3"></path>
-                            </svg>
-                            </span>
-                            <div className="flex flex-col flex-1">
-                            <h3 className="text-sm font-medium">Air Conditioner</h3>
-                            <div className="divide-x divide-gray-200 mt-auto">
-                                <span
-                                className="inline-block px-3 text-xs leading-none text-gray-400 font-normal first:pl-0"
-                                >2 unit </span
-                                >
-                                <span
-                                className="inline-block px-3 text-xs leading-none text-gray-400 font-normal first:pl-0"
-                                >18kWh</span
-                                >
-                            </div>
-                            </div>
-                            <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="w-5 h-5 shrink-0"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            stroke-width="2"
-                            stroke="currentColor"
-                            fill="none"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            >
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M9 6l6 6l-6 6"></path>
-                            </svg>
+                        <div aria-label="content" className="mt-9 grid gap-2.5">
+                            {Novelaction.map((Novelaction: NovelCom, index: number) => (
+                                <div key={index} className="flex items-center space-x-4 p-3.5 rounded-full bg-secondary">
+                                    <a href="#">
+                                        <div className="flex items-center space-x-4 p-3.5 rounded-full bg-secondary">
+                                            <span
+                                                className="flex items-center justify-center w-10 h-10 shrink-0 rounded-full bg-base-100 text-gray-900"
+                                            >
+                                                <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/book.png" alt="book" />
+                                            </span>
+                                            <div className="flex flex-col flex-1">
+                                                <div className="font-bold" key={Novelaction.id}>
+                                                    {Novelaction.title}
+                                                    {Novelaction.text}
+                                                </div>
+                                            </div>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                className="w-5 h-5 shrink-0"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                stroke-width="2"
+                                                stroke="currentColor"
+                                                fill="none"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            >
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                <path d="M9 6l6 6l-6 6"></path>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            ))}
                         </div>
-                        </a>
-                        <a href="#">
-                        <div
-                            className="flex items-center space-x-4 p-3.5 rounded-full bg-gray-100"
-                        >
-                            <span
-                            className="flex items-center justify-center w-10 h-10 shrink-0 rounded-full bg-white text-gray-900"
-                            >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-6 h-6"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                d="M3 13m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
-                                ></path>
-                                <path d="M17 17l0 .01"></path>
-                                <path d="M13 17l0 .01"></path>
-                                <path d="M15 13l0 -2"></path>
-                                <path d="M11.75 8.75a4 4 0 0 1 6.5 0"></path>
-                                <path d="M8.5 6.5a8 8 0 0 1 13 0"></path>
-                            </svg>
-                            </span>
-                            <div className="flex flex-col flex-1">
-                            <h3 className="text-sm font-medium">Wi-Fi Router</h3>
-                            <div className="divide-x divide-gray-200 mt-auto">
-                                <span
-                                className="inline-block px-3 text-xs leading-none text-gray-400 font-normal first:pl-0"
-                                >1 unit</span
-                                >
-                                <span
-                                className="inline-block px-3 text-xs leading-none text-gray-400 font-normal first:pl-0"
-                                >8kWh</span
-                                >
-                            </div>
-                            </div>
-                            <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="w-5 h-5 shrink-0"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            stroke-width="2"
-                            stroke="currentColor"
-                            fill="none"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            >
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M9 6l6 6l-6 6"></path>
-                            </svg>
-                        </div>
-                        </a>
-                        <a href="#">
-                        <div
-                            className="flex items-center space-x-4 p-3.5 rounded-full bg-gray-100"
-                        >
-                            <span
-                            className="flex items-center justify-center w-10 h-10 shrink-0 rounded-full bg-white text-gray-900"
-                            >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-6 h-6"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z"
-                                ></path>
-                                <path d="M7 20h10"></path>
-                                <path d="M9 16v4"></path>
-                                <path d="M15 16v4"></path>
-                            </svg>
-                            </span>
-                            <div className="flex flex-col flex-1">
-                            <h3 className="text-sm font-medium">Smart Tv</h3>
-                            <div className="divide-x divide-gray-200 mt-auto">
-                                <span
-                                className="inline-block px-3 text-xs leading-none text-gray-400 font-normal first:pl-0"
-                                >2 unit</span
-                                >
-                                <span
-                                className="inline-block px-3 text-xs leading-none text-gray-400 font-normal first:pl-0"
-                                >12kWh</span
-                                >
-                            </div>
-                            </div>
-                            <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="w-5 h-5 shrink-0"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            stroke-width="2"
-                            stroke="currentColor"
-                            fill="none"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            >
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M9 6l6 6l-6 6"></path>
-                            </svg>
-                        </div>
-                        </a>
-                        <a href="#">
-                        <div
-                            className="flex items-center space-x-4 p-3.5 rounded-full bg-gray-100"
-                        >
-                            <span
-                            className="flex items-center justify-center w-10 h-10 shrink-0 rounded-full bg-white text-gray-900"
-                            >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-6 h-6"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                d="M7.502 19.423c2.602 2.105 6.395 2.105 8.996 0c2.602 -2.105 3.262 -5.708 1.566 -8.546l-4.89 -7.26c-.42 -.625 -1.287 -.803 -1.936 -.397a1.376 1.376 0 0 0 -.41 .397l-4.893 7.26c-1.695 2.838 -1.035 6.441 1.567 8.546z"
-                                ></path>
-                            </svg>
-                            </span>
-                            <div className="flex flex-col flex-1">
-                            <h3 className="text-sm font-medium">Humidifier</h3>
-                            <div className="divide-x divide-gray-200 mt-auto">
-                                <span
-                                className="inline-block px-3 text-xs leading-none text-gray-400 font-normal first:pl-0"
-                                >1 unit</span
-                                >
-                                <span
-                                className="inline-block px-3 text-xs leading-none text-gray-400 font-normal first:pl-0"
-                                >2kWh</span
-                                >
-                            </div>
-                            </div>
-                            <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="w-5 h-5 shrink-0"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            stroke-width="2"
-                            stroke="currentColor"
-                            fill="none"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            >
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M9 6l6 6l-6 6"></path>
-                            </svg>
-                        </div>
-                        </a>
-                    </div>
                     </div>
                 </div>
             </section>
-
-            <section>
-            <div className="bg-accent py-10">
-                <div className="container mx-auto">
-                    <div className="flex items-center justify-center">
-                    <div className="text-center text-white">
-                        <h1 className="text-3xl font-bold mt-20">Romance</h1>
-                        {Novelromance.map((Novelromance: NovelCom, index: number) => (
-                    <div key={index} className="text-2xl max-w-wl flex items-center bg-100 p-3 rounded-lg gap-4 my-10">
-                        <li className="font-bold" key={Novelromance.id}>
-                            {Novelromance.title}
-                            {Novelromance.text}
-                        </li>
-                    </div>
-                ))}
-                <h1 className="text-3xl font-bold mt-20">Action</h1>
-                {Novelaction.map((Novelaction: NovelCom, index: number) => (
-                    <div key={index} className="text-2xl max-w-wl flex items-center bg-100 p-3 rounded-lg gap-4 my-10">
-                        <li className="font-bold" key={Novelaction.id}>
-                            {Novelaction.title}
-                            {Novelaction.text}
-                        </li>
-                    </div>
-                ))}
-                    </div>
-                    </div>
-                </div>
-            </div>
-            </section>
+            <br />
         </div>
     )
 }
