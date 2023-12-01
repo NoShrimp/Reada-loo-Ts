@@ -121,13 +121,13 @@ export default function Novel() {
                                     วันหนึ่งพระเอกได้รับพลังอันลึกลับจากมิติแห่งความฝัน ถ้าได้ฆ่าสัตว์ประหลาดในความฝัน ระดับพลังจะเพิ่มขึ้นในชีวิตจริง บ้านในความจริงจะกลายเป็นฐานทัพในความฝัน การวางกลยุทธในชีวิตจริง และมิติแห่งความฝันจะเชื่อมโยงถึงกัน ทั้งเงินตราและความแข็งแกร่ง สักวันหนึ่งเขาจะได้ครองโลก
                                 </p>
                                 <div className="flex -mx-2 mb-4">
-                                    <div className="w-1/2 px-2">
+                                    {/* <div className="w-1/2 px-2">
                                         <button className="w-full bg-accent dark:bg-gray-600 py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Add to favorite</button>
-                                    </div>
-                                    <div className="w-1/2 px-2">
+                                    </div> */}
+                                    {/* <div className="w-1/2 px-2">
                                         <FaEye className="text-base-100" />
                                         <h3 className="text-lg font-bold text-base-100 dark:text-white mb-2">10,000,000</h3>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

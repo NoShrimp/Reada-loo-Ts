@@ -48,9 +48,9 @@ export default function DashboardLayout({children} : { children: React.ReactNode
                                     </ul>
                                 </div>
                             </div>
-                        <li><a href="/attractions/favorite">
+                        {/* <li><a href="/attractions/favorite">
                             <div className="text-lg font-medium">My Favorite</div>
-                        </a></li>
+                        </a></li> */}
                         <li><a href="/attractions/about">
                             <div className="text-lg font-medium">About us</div>
                         </a></li>
@@ -128,9 +128,9 @@ return (
                                 </ul>
                             </div>
                         </div>
-                    <li><a href="/attractions/favorite">
+                    {/* <li><a href="/attractions/favorite">
                         <div className="text-lg font-medium">My Favorite</div>
-                    </a></li>
+                    </a></li> */}
                     <li><a href="/attractions/about">
                         <div className="text-lg font-medium">About us</div>
                     </a></li>

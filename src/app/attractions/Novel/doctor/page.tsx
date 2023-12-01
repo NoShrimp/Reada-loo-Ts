@@ -120,11 +120,11 @@ export default function Novel() {
                                 <p className="text-base-100 dark:text-gray-300 text-sm mb-4 pt-2">
                                 เมื่อเสิ่นเชียนม่อ นิติเวชสาวยุคปัจจุบันมาเกิดใหม่ในร่างของบุตรีชายาเอกจวนกั๋วกง มีใบหน้าเสียโฉมเพราะถูกไฟคลอกซ้ำยังถูกจับแต่งงานกับท่านอ๋องขาพิการ แม้เจ้าของร่างเดิมจะก้มหน้ายอมรับชะตากรรม แต่เสิ่นเชียนม่อคนใหม่ไม่มีทางยอมเด็ดขาด ทั้งคดียุ่งยากมากมายและปัญหาความริษยาภายในครอบครัว เธอจะฝ่าฟันได้อย่างไร
                                 </p>
-                                <div className="flex -mx-2 mb-4">
+                                {/* <div className="flex -mx-2 mb-4">
                                     <div className="w-1/2 px-2">
                                         <button className="w-full bg-accent dark:bg-gray-600 py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Add to favorite</button>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -171,7 +171,7 @@ export default function Novel() {
                                         </div>
                                     </td>
                                     <td className="font-bold">
-                                    ชายาแพทย์ขั้นหนึ่ง ตอนที่ 1
+                                    ชายาแพทย์ขั้นหนึ่ง ตอนที่ 2
                                         <br />
                                     </td>
                                     <td className="text-center"><FaEye className="w-full pl-0" />194,654</td>
