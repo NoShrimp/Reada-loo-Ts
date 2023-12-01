@@ -231,7 +231,7 @@ export default function Attractions() {
                             <h2 className="card-title">Dimension มิติราชัน</h2>
                             <p>Top 1 reading Action</p>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Read</button>
+                                <a href="/attractions/Novel/dimension" className="btn btn-primary">Read</a>
                             </div>
                         </div>
                     </div>
@@ -240,43 +240,43 @@ export default function Attractions() {
                             <h2 className="card-title">ชายาแพทย์ขั้นหนึ่ง</h2>
                             <p>Top 1 reading Romance</p>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Read</button>
+                            <a href="/attractions/Novel/doctor" className="btn btn-primary">Read</a>
                             </div>
                         </div>
                     </div>
                     <div className="card card-side bg-base-100 shadow-xl">
                         <div className="card-body">
-                            <h2 className="card-title">Title!</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <h2 className="card-title">Dimension มิติราชัน ภาค 2</h2>
+                            <p>ภาคต่อของสุดยอดนิยาย Action ได้มาถึงแล้วว</p>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Read</button>
+                            <a href="/attractions/Novel/dimension" className="btn btn-primary">Read</a>
                             </div>
                         </div>
                     </div>
                     <div className="card card-side bg-base-100 shadow-xl">
                         <div className="card-body">
-                            <h2 className="card-title">Title!</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <h2 className="card-title">เสน่ห์รัก</h2>
+                            <p>New Reading Romance</p>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Read</button>
+                            <a href="/attractions/Novel/love" className="btn btn-primary">Read</a>
                             </div>
                         </div>
                     </div>
                     <div className="card card-side bg-base-100 shadow-xl">
                         <div className="card-body">
-                            <h2 className="card-title">Title!</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <h2 className="card-title">ตำนานสุยอวิ๋นยอดกุนซือ</h2>
+                            <p>New Reading Action</p>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Read</button>
+                            <a href="/attractions/Novel/Kunsue" className="btn btn-primary">Read</a>
                             </div>
                         </div>
                     </div>
                     <div className="card card-side bg-base-100 shadow-xl">
                         <div className="card-body">
-                            <h2 className="card-title">Title!</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <h2 className="card-title">มหามรรคาเทียบเทียมฟ้า ภาค 2</h2>
+                            <p>มาแล้วกับนิยายภาคต่อสุดซึ้ง อ่านเลย!!</p>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Read</button>
+                            <a href="/attractions/Novel/dimension" className="btn btn-primary">Read</a>
                             </div>
                         </div>
                     </div>
